@@ -1,9 +1,11 @@
 #!/bin/sh
 
-pip install virtualenv
+pip3 install virtualenv
 
-python -m venv env
+python3 -m venv env
 
-python env/bin/activate
+chmod 775 .
 
-pip install -r ./requirements.txt
+source env/bin/activate
+
+pip3 install -r ./requirements.txt
