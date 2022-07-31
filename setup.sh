@@ -1,11 +1,7 @@
 #!/bin/sh
 
-pip3 install virtualenv
-
 python3 -m venv env
 
-chmod 775 .
+. env/bin/activate
 
-source env/bin/activate
-
-pip3 install -r ./requirements.txt
+pip3 install -r requirements.txt
